@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+body {
+  background-color: #f0f2f5;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.app-container {
+  width: 100%;
+  max-width: 550px;
+  padding: 20px;
+}
+
+.todo-card {
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+}
+
+.title {
+  text-align: center;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+.input-container {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.todo-input {
+  flex-grow: 1;
+  border: 2px solid #eee;
+  border-radius: 8px;
+  padding: 12px 15px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+.todo-input:focus {
+  outline: none;
+  border-color: #8e49e8;
+}
+
+.add-btn {
+  background: linear-gradient(45deg, #8e49e8, #5f38c1);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.3s;
+}
+
+.add-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(142, 73, 232, 0.4);
+}
+
+.todo-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  background: #fafafa;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  transition: background-color 0.3s;
+}
+
+.todo-item:last-child {
+  margin-bottom: 0;
+}
+
+.todo-item.completed {
+  background-color: #f1f1f1;
+}
+
+.todo-item.completed .todo-text {
+  text-decoration: line-through;
+  color: #aaa;
+}
+
+.checkbox {
+  margin-right: 15px;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.todo-text {
+  flex-grow: 1;
+  color: #555;
+  font-size: 16px;
+  margin: 0 10px;
+}
+
+.button-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.edit-btn, .save-btn {
+  background: #28a745;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.edit-btn:hover {
+  background: #218838;
+}
+
+.save-btn {
+  background: #007bff;
+}
+
+.save-btn:hover {
+  background: #0056b3;
+}
+
+.delete-btn {
+  background: transparent;
+  border: none;
+  color: #aaa;
+  font-size: 20px;
+  cursor: pointer;
+  transition: color 0.3s;
+  padding: 0 5px;
+}
+
+.delete-btn:hover {
+  color: #e74c3c;
+}
+
+.edit-input {
+  flex-grow: 1;
+  border: 2px solid #8e49e8;
+  border-radius: 6px;
+  padding: 8px 12px;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.edit-input:focus {
+  outline: none;
+}
